@@ -1,0 +1,79 @@
+package airline.management.system;
+import java.sql.*;
+import java.awt.DisplayMode;
+import java.sql.*;
+import java.util.Scanner;
+public class Login{
+Statement stmt;
+Connection con;
+int count;
+Scanner s=new Scanner(System.in);
+Login(){
+try {
+Class.forName("oracle.jdbc.driver.OracleDriver");
+this.con =DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","system","system");
+this.stmt=con.createStatement();
+}
+catch(Exception e) {}
+}
+
+void method() {
+try {
+System.out.println("Enter 1 To LOGIN \nEnter 2 To SIGN-IN");
+int n=s.nextInt();
+if(n==1) {
+System.out.println("Enter 1 To Login TO Admin \nEnter 2 To Login NormalUser");
+int n1=s.nextInt();
+if(n1==1) {
+this.loginCheck("Admin",1);
+}
+else {
+this.loginCheck("GeneralUsers",2);
+}
+}
+else {
+System.out.println("Enter Provide a UserId :");
+String s5=s.next();
+System.out.println("Enter Provide a Password :");
+String s6=s.next();
+PreparedStatement pst=con.prepareStatement("insert into GeneralUsers(id,password)values(?,?)");
+pst.setString(1,s5);
+pst.setString(2,s6);
+pst.executeUpdate();
+System.out.println("Successfully Registered\n***Welcome User***");
+new DisplayMode().method1();
+pst.close();
+}
+}
+catch(Exception e) {}
+s.close();
+}
+void loginCheck(String name,int i) {
+try {
+System.out.println("Enter UserId :");
+String s1=s.next();
+System.out.println("Enter Password :");
+String s2=s.next();
+ResultSet res = stmt.executeQuery("select * from "+name);
+while(res.next())
+{
+String S1=res.getString(1);
+String S2=res.getString(2);
+if(s1.contentEquals(S1) && s2.contentEquals(S2)) {
+count++;
+}
+}
+if(count == 1 && i==1) {
+new Admin().method2();
+}
+else if(count == 1 && i == 2) {
+System.out.println("***Welcome User***");
+new Display().method1();
+}
+else {
+System.out.println("Wrong Id/Password");
+}
+}
+catch(Exception e) {}
+}
+}
