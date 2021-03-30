@@ -10,7 +10,7 @@ public class TestCancellation {
 	 
 
 	    public static void main(String[] args) {
-	        new Cancellation().Display();
+	       new TicketCancellation()).Display();
 	        
 }
 }

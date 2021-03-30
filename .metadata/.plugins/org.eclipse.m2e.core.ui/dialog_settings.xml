@@ -2,6 +2,9 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Training"/>
+			<item value="C:\Training\QA_Testing\TestAutomation\src\test\java\com\valuemomentum\automation\runner\Runner.java"/>
+			<item value="C:\Training\QA_Testing"/>
 			<item value="C:\Training\Java"/>
 			<item value="C:\Training\Java\JUnitDemo1\src\test\java\com\vam\training\testing\JUnitDemo1\SuiteTest.java"/>
 			<item value="C:\Training\Java\app_designing"/>
@@ -16,7 +19,7 @@
 		</list>
 	</section>
 	<section name="MavenProjectWizardArchetypePage">
-		<item key="catalog" value="internal"/>
+		<item key="catalog" value="https://repo1.maven.org/maven2/archetype-catalog.xml"/>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
 			<item value="[artifactId]-TRUNK"/>
@@ -28,15 +31,10 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
-			<item value="com.valuemomentum.training.OracleDemo"/>
-			<item value="com.valuemomentum.training.jdbcdemo"/>
 		</list>
 		<list key="groupId">
-			<item value="com.valuemomentum.training"/>
 		</list>
 		<list key="artifactId">
-			<item value="OracleDemo"/>
-			<item value="jdbcdemo"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

@@ -1,4 +1,5 @@
-content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"/>
+content_assist_favorite_static_members=org.testng.Assert.*
+content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="java.lang.Enum"><rhs name\="org.openqa.selenium.WindowType"/><rhs name\="com.aventstack.extentreports.Status"/></lhs><lhs name\="org.openqa.selenium.By"><rhs name\="org.openqa.selenium.By$ByXPath"/><rhs name\="org.openqa.selenium.By$ByLinkText"/></lhs><lhs name\="com.valuemomentum.automation.assessment.pages.BasePage"><rhs name\="com.valuemomentum.automation.assessment.pages.SearchResultPage"/><rhs name\="com.valuemomentum.automation.assessment.pages.ProductDetailsPage"/></lhs><lhs name\="com.valuemomentum.automation.assessment.pages.SearchResultPage"><rhs name\="com.valuemomentum.automation.assessment.pages.SearchResultPage"/></lhs><lhs name\="com.valuemomentum.automation.assessment.pages.ProductDetailsPage"><rhs name\="com.valuemomentum.automation.assessment.pages.ProductDetailsPage"/></lhs></history>
 content_assist_number_of_computers=12
 content_assist_proposals_background=255,255,255
 content_assist_proposals_foreground=0,0,0
